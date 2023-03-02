@@ -1,0 +1,23 @@
+##to create table using sql###
+
+CREATE TABLE "abc" (
+	"Name"	TEXT,
+	"marks"	INTEGER,
+	"department"	TEXT,
+	"address"	TEXT
+);
+
+##To filter one specific data(here person who comes from texas)##
+
+SELECT * FROM company WHERE Address == "texas"
+
+
+##to filter two data at the same time##
+
+SELECT * FROM company WHERE address == "Norway" or Address == "texas"
+
+SELECT * FROM company WHERE Address == "texas" and Salary > 50000
+
+##to find maximum of unitprice from given data##
+
+SELECT  MAX(Unitprice) FROM Supermarket_sales
